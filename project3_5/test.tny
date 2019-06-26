@@ -1,0 +1,40 @@
+int getIdx(void){
+	int idx;
+	idx = 44;
+	return idx;
+}
+
+int func(int paramA, int paramB[]){
+	int aArr[100];
+	int aVar;
+	int bVar;
+	int ret;
+
+	aVar = 1;
+	bVar = 2;
+
+	if (aVar <= 0)
+	{
+		int cVar;
+		cVar = paramA + paramB[bVar + getIdx()];
+		aVar = bVar * cVar;
+		while (bVar != aVar)
+		{
+			int dVar;
+			dVar = aVar / bVar + getIdx();
+		}
+	}
+
+	return ret;
+}
+
+int globArr[200];
+int globBrr[100];
+
+void main(void)
+{
+	int locArr[100];
+	int locVar;
+
+	func(locVar, locArr);
+}
